@@ -1,4 +1,4 @@
-package ch.heigvd.res.chill.domain.wasadigi;
+package ch.heigvd.res.chill.domain.haxos;
 
 import ch.heigvd.res.chill.domain.Bartender;
 import ch.heigvd.res.chill.protocol.OrderRequest;
@@ -21,7 +21,7 @@ class SuperBockTest {
   @Test
   void aBartenderShouldAcceptAnOrderForSuperBock() {
     Bartender jane = new Bartender();
-    String productName = "ch.heigvd.res.chill.domain.wasadigi.SuperBock";
+    String productName = "ch.heigvd.res.chill.domain.haxos.SuperBock";
     OrderRequest request = new OrderRequest(3, productName);
     OrderResponse response = jane.order(request);
     BigDecimal expectedTotalPrice = SuperBock.PRICE.multiply(new BigDecimal(3));
