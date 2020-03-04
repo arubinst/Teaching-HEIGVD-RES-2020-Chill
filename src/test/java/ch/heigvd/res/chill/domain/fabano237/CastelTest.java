@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CastelTest {
     @Test
-    void thePriceAndNameForGuinesshouldBeCorrect() {
+    void thePriceAndNameForCastelshouldBeCorrect() {
         Castel beer = new Castel();
         assertEquals(beer.getName(), Castel.NAME);
         assertEquals(beer.getPrice(), Castel.PRICE);
